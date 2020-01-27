@@ -15,5 +15,14 @@ public class Task4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int numeric = scanner.nextInt();
+
+				int factorial = 1;
+		System.out.print("факториал " + numeric + "! = ");
+		while (numeric > 0){
+			//factorial *= numeric--;
+			factorial = factorial * numeric;
+			numeric = numeric -1;
+		}
+		System.out.println(factorial);
 	}
 }
