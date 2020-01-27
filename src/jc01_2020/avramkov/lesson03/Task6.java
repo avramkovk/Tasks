@@ -16,6 +16,14 @@ public class Task6 {
 		Scanner scanner = new Scanner(System.in);
 		int horizontal = scanner.nextInt();
 		int vertical = scanner.nextInt();
+
+		for (int i = 0; i < horizontal; i++) {
+			System.out.print("+");
+			for (int j = 0; j < vertical; j++) {
+				System.out.print("-");
+			}
+			System.out.println();
+		}
 //        System.out.print("");
 //        System.out.println("");
 	}
