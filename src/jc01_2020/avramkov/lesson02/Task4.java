@@ -16,16 +16,8 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-
-        if ((a <= b && b <=c) || (a >= b && b >= c)){
-            System.out.println(b);
-        } else if ((b <= a && a <=c) || (b >= a && a >= c)) {
-            System.out.println(a);
-        } else {System.out.println(c);
-        }
-
+        int first = scanner.nextInt();
+        int second = scanner.nextInt();
+        int third = scanner.nextInt();
     }
 }
