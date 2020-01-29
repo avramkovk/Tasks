@@ -11,6 +11,10 @@ package jc01_2020.avramkov.lesson03;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
+import java.util.Scanner;
+
 public class Task6 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -18,13 +22,14 @@ public class Task6 {
 		int vertical = scanner.nextInt();
 
 		for (int i = 0; i < horizontal; i++) {
-			System.out.print("+");
 			for (int j = 0; j < vertical; j++) {
-				System.out.print("-");
+				if (i==0 && j!=vertical-1)System.out.print("*");
+				else if (j==vertical-1)System.out.println("*");
+				else if (i==horizontal-1){System.out.print("*");}
+				else if (j==0)System.out.print("*");
+				else System.out.print("-");
 			}
-			System.out.println();
+
 		}
-//        System.out.print("");
-//        System.out.println("");
 	}
 }
