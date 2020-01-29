@@ -19,5 +19,24 @@ public class Task6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int code = scanner.nextInt();
+
+        char symbol = (char) code;
+
+        //первый вариант: через метод isLetter() - проверяет, является ли символ буквой (не только латинской)
+        if (Character.isLetter(symbol)) {
+            System.out.print("Да");
+            System.out.println(". Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
+        }  else {
+            System.out.print("Нет");
+            System.out.println(". Введенный код не является символом буквы.");
+        }
+
+
+        /*//второй вариант: через коды
+        if ((65 <= code && code <= 90) || (97 <= code && code <= 122)) {
+            System.out.println("..Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
+        } else {
+            System.out.println("..Введенный код не является символом буквы.");
+        }*/
     }
 }
