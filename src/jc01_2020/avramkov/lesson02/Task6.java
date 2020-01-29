@@ -22,25 +22,21 @@ public class Task6 {
 
         char symbol = (char) code;
 
-        if ((symbol >= 'a'&& symbol <= 'z') || (symbol >= 'A' && symbol <= 'Z')){
-            System.out.print("Да"); //это буква
-        } else System.out.print("Нет"); // это друго символ
-
-        //второй вариант: через метод isLetter() - проверяет, является ли символ буквой (не только латинской)
-/*        if (Character.isLetter(symbol)) {
+        //первый вариант: через метод isLetter() - проверяет, является ли символ буквой (не только латинской)
+        if (Character.isLetter(symbol)) {
             System.out.print("Да");
-            System.out.println("1. Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
+            System.out.println(". Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
         }  else {
             System.out.print("Нет");
-            System.out.println("1. Введенный код не является символом буквы.");
-        }*/
+            System.out.println(". Введенный код не является символом буквы.");
+        }
 
 
-        /*//третий вариант: через коды
+        /*//второй вариант: через коды
         if ((65 <= code && code <= 90) || (97 <= code && code <= 122)) {
-            System.out.println("2. Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
+            System.out.println("..Вы ввели код " + code + ". Согласно таблице ASCII это символ буквы: " + symbol);
         } else {
-            System.out.println("2. Введенный код не является символом буквы.");
+            System.out.println("..Введенный код не является символом буквы.");
         }*/
     }
 }
