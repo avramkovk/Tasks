@@ -28,8 +28,10 @@ public class Task6 {
 				else if (i==horizontal-1){System.out.print("*");}
 				else if (j==0)System.out.print("*");
 				else System.out.print("-");
+
+
+				}
 			}
 
 		}
 	}
-}
