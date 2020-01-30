@@ -19,10 +19,21 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int[] array = new int[7];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = scanner.nextInt();
-		}
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[7];
+        double sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+            sum = sum + array[i];
+        }
+        double average = sum / array.length;
+        //System.out.println(average);
+
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] > average) {
+                System.out.println(array[j]);
+            }
+        }
     }
 }
