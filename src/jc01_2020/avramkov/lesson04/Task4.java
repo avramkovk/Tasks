@@ -17,39 +17,8 @@ public class Task4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int[] array = new int[7];
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt(); //ввод чисел с клавиатуры
-        }
-
-        int minArray = array[0]; //- хранит значение минимального элемента массива. Присвоим ей нач. значение первого элемента массива
-        int indexMin = 0; // объявляем переменную, храняющую значение индекса минимального элемента массива
-        for (int j = 0; j < array.length; j++) { //в цикле проходимся по каждому элементу массива
-            if (minArray > array[j]){ //сравниваем каждый элемент массива со значением переменной, хранящей миним. значения массива
-                minArray = array[j]; //если условие истинно, то переписываем значение переменной minArray
-                indexMin = j; //находим индекс минимального значения массива
-            }
-        }
-
-        int maxArray = array[0];
-        int indexMax = 0;
-        for (int k = 0; k < array.length; k++) { //поиск максимального значения массива
-            if (maxArray < array[k]){
-                maxArray = array[k];
-                indexMax = k;
-            }
-        }
-
-        int sum = 0; //объявляем счетчик суммы элементов, которыя стоят между max и min
-        for (int h = 0; h < array.length; h++) {
-            if((indexMin < h && h < indexMax) || (indexMin > h && h > indexMax)){
-                sum = sum + array[h];
-            }
-        }
-
-
-        System.out.println("min "+minArray);
-        System.out.println("max "+maxArray);
-        System.out.println(sum);
+		for (int i = 0; i < array.length; i++) {
+			array[i] = scanner.nextInt();
+		}
 	}
 }
