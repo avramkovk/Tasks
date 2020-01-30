@@ -17,8 +17,39 @@ public class Task4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int[] array = new int[7];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = scanner.nextInt();
-		}
+
+
+
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+
+        }
+
+        int min = array[0];
+        for (int j = 0; j < array.length; j++) {
+            if (min > array[j]){
+                min = array[j];
+            }
+        }
+
+        int max = array[0];
+        for (int k = 0; k < array.length; k++) {
+            if (max < array[k]){
+                max = array[k];
+            }
+        }
+
+        int sum = 0;
+        for (int h = 0; h < array.length; h++) {
+            if(array[h] > min && array[h] < max){
+                sum = sum + array[h];
+            }
+        }
+
+
+        System.out.println("min "+min);
+        System.out.println("max "+max);
+        System.out.println(sum);
 	}
 }
