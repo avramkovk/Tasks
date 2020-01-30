@@ -1,4 +1,4 @@
-package jc01_2020.lesson04;
+package jc01_2020.avramkov.lesson04;
 
 import org.junit.Test;
 
