@@ -16,10 +16,34 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int[] array = new int[5];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = scanner.nextInt();
-		}
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[5];
+
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt(); //шаг 1. заполняем массив
+        }
+
+        int min = array[0]; //присвоение минимальному значению массива начального значенения равного первому элементу массива
+		int indexForMin = 0;
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] < 0) {
+                array[j] = -1 * array[j]; //шаг 2. берем модуль для отриц чисел
+            }
+        }
+
+
+
+        for (int k = 0; k < array.length; k++) {
+            if (min > array[k]){
+                min = array[k];
+			indexForMin = k;}
+        }
+
+		System.out.println();
+        System.out.println("Min:"+min);
+		System.out.println(indexForMin);
+
+
     }
 }
