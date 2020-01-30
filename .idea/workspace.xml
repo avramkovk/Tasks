@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e411d41e-9e14-4a64-a90c-88fbc00db205" name="Default Changelist" comment="lesson2 все тесты пройдены/ разобраться как работают исключения">
+    <list default="true" id="e411d41e-9e14-4a64-a90c-88fbc00db205" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/modulo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/modulo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/TaskB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/TaskB1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/TaskB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/TaskB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/lesson04/Testing04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Testing04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,33 +49,7 @@
       <recent name="C:\Users\user\IdeaProjects\Tasks\src\avramkov" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task2">
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson03.Task2" />
-      <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jc01_2020.avramkov.lesson03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson03.Task5" />
-      <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jc01_2020.avramkov.lesson03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Task7">
     <configuration name="Task6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson03.Task6" />
       <module name="Tasks" />
@@ -84,8 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson03.Task8" />
+    <configuration name="Task7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson03.Task7" />
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
@@ -93,6 +72,34 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="modulo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jc01_2020.modulo1" />
+      <module name="Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jc01_2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testing02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jc01_2020.avramkov.lesson02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jc01_2020.avramkov.lesson02" />
+      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson02.Testing02" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task2" />
-        <item itemvalue="JUnit.Testing03" />
+        <item itemvalue="Application.Task7" />
         <item itemvalue="Application.Task6" />
-        <item itemvalue="Application.Task5" />
-        <item itemvalue="Application.Task8" />
+        <item itemvalue="Application.modulo1" />
+        <item itemvalue="JUnit.Testing02" />
+        <item itemvalue="JUnit.Testing03" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580315556515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson2 все тесты пройдены/ разобраться как работают исключения">
+      <created>1580327817554</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580327817554</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,75 +221,65 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="438" y="73" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1580326861778" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580327540341">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580378499867">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580327540341" />
-    <state width="1323" height="264" key="GridCell.Tab.0.bottom" timestamp="1580327787997">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580378499867" />
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1580378499962">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="264" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580327787997" />
-    <state width="1323" height="264" key="GridCell.Tab.0.center" timestamp="1580327787997">
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580378499962" />
+    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1580378499961">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="264" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580327787997" />
-    <state width="1323" height="264" key="GridCell.Tab.0.left" timestamp="1580327787997">
+    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580378499961" />
+    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1580378499961">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="264" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580327787997" />
-    <state width="1323" height="264" key="GridCell.Tab.0.right" timestamp="1580327787997">
+    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580378499961" />
+    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1580378499961">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="264" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580327787997" />
-    <state width="1323" height="218" key="GridCell.Tab.1.bottom" timestamp="1580327288282">
+    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580378499961" />
+    <state width="1323" height="218" key="GridCell.Tab.1.bottom" timestamp="1580327907083">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580327288282" />
-    <state width="1323" height="218" key="GridCell.Tab.1.center" timestamp="1580327288281">
+    <state width="1323" height="218" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580327907083" />
+    <state width="1323" height="218" key="GridCell.Tab.1.center" timestamp="1580327907083">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1580327288281" />
-    <state width="1323" height="218" key="GridCell.Tab.1.left" timestamp="1580327288281">
+    <state width="1323" height="218" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1580327907083" />
+    <state width="1323" height="218" key="GridCell.Tab.1.left" timestamp="1580327907083">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1580327288281" />
-    <state width="1323" height="218" key="GridCell.Tab.1.right" timestamp="1580327288281">
+    <state width="1323" height="218" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1580327907083" />
+    <state width="1323" height="218" key="GridCell.Tab.1.right" timestamp="1580327907083">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="218" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580327288281" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1580315564092">
+    <state width="1323" height="218" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580327907083" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1580327822228">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580315564092" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1580301192531">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580327822228" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1580371646324">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1580301192531" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1580371646324" />
     <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580127639641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="387" y="263" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738@0.0.1366.738" timestamp="1580127639641" />
-    <state x="471" y="132" key="git4idea.merge.GitPullDialog" timestamp="1580301218812">
+    <state x="471" y="132" key="git4idea.merge.GitPullDialog" timestamp="1580371672073">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="471" y="132" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1580301218812" />
+    <state x="471" y="132" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1580371672073" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task4.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task4.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/lesson03/Task6.java</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
