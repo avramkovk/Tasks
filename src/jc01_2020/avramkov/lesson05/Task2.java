@@ -17,6 +17,20 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String str = scanner.next();
+		String str = scanner.nextLine();
+
+        System.out.println(str);
+		String[] strArray = str.trim().split(" "); //trim() - удаляет пробелы в начале и конце строки
+        //for (int i = 0; i < strArray.length; i++) {       //split(" ") - возвращает массив из элементов, которые были разделены пробелом
+        //   System.out.print(strArray[i]);
+        //}
+        String joinArray = String.join("", strArray);
+        String reverse = new StringBuilder(joinArray).reverse().toString();
+
+        if (joinArray.equalsIgnoreCase(reverse)){
+            System.out.println("Да");
+        } else System.out.println("Нет");
+
+
     }
 }
