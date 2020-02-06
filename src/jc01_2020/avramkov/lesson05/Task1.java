@@ -26,7 +26,7 @@ public class Task1 {
         if (Pattern.matches("^[\\w&&[^0-9]]+[\\w]+",str)) {
             System.out.println("Да");
         } else System.out.println("Нет");
-
+//a
     }
 }
 
