@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e411d41e-9e14-4a64-a90c-88fbc00db205" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/TaskB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/TaskB1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05/Task2.java" afterDir="false" />
-    </list>
+    <list default="true" id="e411d41e-9e14-4a64-a90c-88fbc00db205" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,16 +31,17 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/jc01_2020/avramkov" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Tasks\src\jc01_2020\avramkov\lesson05" />
       <recent name="C:\Users\user\IdeaProjects\Tasks\src\jc01_2020\avramkov" />
       <recent name="C:\Users\user\IdeaProjects\Tasks\src\avramkov" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Testing04">
+  <component name="RunManager" selected="JUnit.Testing05">
     <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson05.Task1" />
       <module name="Tasks" />
@@ -117,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Testing04" />
-        <item itemvalue="Application.Task2" />
         <item itemvalue="JUnit.Testing05" />
+        <item itemvalue="Application.Task2" />
+        <item itemvalue="JUnit.Testing04" />
         <item itemvalue="Application.Task1" />
         <item itemvalue="Application.TaskB1" />
       </list>
@@ -262,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580736619131</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="5-2 test +">
+      <created>1580999236441</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1580999236441</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -284,7 +287,8 @@
     <MESSAGE value="4-B2 test +" />
     <MESSAGE value="4-B1 test + ОЧЕЕЕЕНЬ медленно выполняется" />
     <MESSAGE value="4-B1 test +" />
-    <option name="LAST_COMMIT_MESSAGE" value="4-B1 test +" />
+    <MESSAGE value="5-2 test +" />
+    <option name="LAST_COMMIT_MESSAGE" value="5-2 test +" />
   </component>
   <component name="WindowStateProjectService">
     <state x="531" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580640875250">
@@ -299,26 +303,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="430" y="226" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1580721870983" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580877826302">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580999343608">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580877826302" />
-    <state width="1323" height="219" key="GridCell.Tab.0.bottom" timestamp="1580842583493">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580999343608" />
+    <state width="1323" height="219" key="GridCell.Tab.0.bottom" timestamp="1580999296604">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580842583493" />
-    <state width="1323" height="219" key="GridCell.Tab.0.center" timestamp="1580842583492">
+    <state width="1323" height="219" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580999296604" />
+    <state width="1323" height="219" key="GridCell.Tab.0.center" timestamp="1580999296604">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580842583492" />
-    <state width="1323" height="219" key="GridCell.Tab.0.left" timestamp="1580842583492">
+    <state width="1323" height="219" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580999296604" />
+    <state width="1323" height="219" key="GridCell.Tab.0.left" timestamp="1580999296604">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580842583492" />
-    <state width="1323" height="219" key="GridCell.Tab.0.right" timestamp="1580842583492">
+    <state width="1323" height="219" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580999296604" />
+    <state width="1323" height="219" key="GridCell.Tab.0.right" timestamp="1580999296604">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580842583492" />
+    <state width="1323" height="219" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580999296604" />
     <state width="1323" height="218" key="GridCell.Tab.1.bottom" timestamp="1580395410624">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -335,14 +339,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="218" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580395410624" />
-    <state x="395" y="86" key="MultipleFileMergeDialog" timestamp="1580640856711">
+    <state x="395" y="86" key="MultipleFileMergeDialog" timestamp="1580999286306">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="395" y="86" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1580640856711" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1580736625397">
+    <state x="395" y="86" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1580999286306" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1580999246417">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580736625397" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580999246417" />
     <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1580877789156">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -355,10 +359,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580656057417" />
-    <state x="471" y="132" key="git4idea.merge.GitPullDialog" timestamp="1580729002654">
+    <state x="471" y="132" key="git4idea.merge.GitPullDialog" timestamp="1580996325064">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="471" y="132" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1580729002654" />
+    <state x="471" y="132" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1580996325064" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1580824904142">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
