@@ -18,8 +18,18 @@ package jc01_2020.avramkov.lesson05;
 import java.util.Scanner;
 
 public class Task4 {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String str = scanner.nextLine();
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
+        String[] strDigit = str.split("\\D"); //split("\\D") - возвращает массив из элементов, которые были разделены
+        // нецифровыми символами, то есть возвращает массив только из цифр
+
+        for (int i = 0; i < strDigit.length; i++) {
+
+            if (!strDigit[i].equals("")) {//если массив только не пустые элементы, т.е выведет наши цифры
+                System.out.println(strDigit[i]);
+            }
+        }
+    }
 }
