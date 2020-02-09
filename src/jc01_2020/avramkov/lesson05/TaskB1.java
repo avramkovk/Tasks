@@ -21,7 +21,7 @@ public class TaskB1 {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 
-		String regexp = "^[a-zA-Z0-9]+[\\w\\.-]+[\\w&&[^_]]{1}@{1}[a-zA-Z]+\\.{1}[a-zA-Z]+";
+		String regexp = "^[\\w[^_]]+[\\w&&[^_]][\\.]?{1}@{1}[a-zA-Z]+\\.{1}[a-zA-Z]+";
 
 		Pattern pattern = Pattern.compile(regexp);
 		Matcher matcher = pattern.matcher(str);
