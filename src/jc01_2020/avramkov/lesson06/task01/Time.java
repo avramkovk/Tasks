@@ -14,10 +14,29 @@ public class Time {
         this.hours = hours;
     }
 
-    int getFullSeconds(){
-        return seconds + 60*minutes + 60*60*hours;
+    public int getFullSeconds() {
+        return seconds + 60 * minutes + 60 * 60 * hours;
+
     }
 
+    //сравнение времени
+    public int compareTime(Time newTime) {
 
+        if (newTime.getFullSeconds() == this.getFullSeconds()) {
+            return newTime.getFullSeconds();
 
+        } else if (newTime.getFullSeconds() > this.getFullSeconds()) {
+            return newTime.getFullSeconds();
+        }
+
+        return this.getFullSeconds();
+    }
+
+//метод вывода на экран количества секунд
+    public void secondToDisplay() {
+        System.out.println(this.getFullSeconds());
+    }
 }
+
+
+
