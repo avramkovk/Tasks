@@ -23,13 +23,13 @@ public class Time {
     public int compareTime(Time newTime) {
 
         if (newTime.getFullSeconds() == this.getFullSeconds()) {
-            return newTime.getFullSeconds();
+            return 0;
 
         } else if (newTime.getFullSeconds() > this.getFullSeconds()) {
-            return newTime.getFullSeconds();
+            return 1;
         }
 
-        return this.getFullSeconds();
+        return -1;
     }
 
 //метод вывода на экран количества секунд

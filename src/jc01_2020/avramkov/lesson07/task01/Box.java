@@ -17,6 +17,11 @@ public class Box extends Shape{
     }
 
     @Override
+    public double getVolume() {
+        return volume;
+    }
+
+    @Override
     public void setVolume(double volume) {
         this.volume = volume;
     }
