@@ -15,5 +15,11 @@ package jc01_2020.avramkov.lesson07.task02;
 public class Application {
 
 	public static void main(String[] args) {
+
+		int[][] board = new int[8][8];
+
+Figure kingFigure = new King('d',2);
+
+		System.out.println(kingFigure.moveTo('d',6));
 	}
 }
