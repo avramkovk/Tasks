@@ -34,7 +34,7 @@ public class Task3 {
 				System.out.print(currentDigit);
 				input = input / 10;
 			}
-		} else if (input == 0){
+		} else {
 			System.out.println("0");
 		}
 	}
