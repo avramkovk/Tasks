@@ -21,7 +21,7 @@ Box box = new Box();
 
         Cylinder cylinder = new Cylinder(2,8);
         System.out.println(box.add(cylinder));
-        System.out.println(box.getVolume());
+
 	}
 
 
