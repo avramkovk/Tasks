@@ -15,14 +15,36 @@ package jc01_2020.avramkov.lesson07.task01;
 
 public class Application {
 
-	public static void main(String[] args) {
-Box box = new Box();
+    public static void main(String[] args) {
+        Box box = new Box();
         box.setVolume(100d);
 
-        Cylinder cylinder = new Cylinder(2,8);
-        System.out.println(box.add(cylinder));
+        System.out.println("Cylinder");
+        Cylinder cylinderFigure = new Cylinder(2, 1);
+        System.out.println(box.add(cylinderFigure));
+        System.out.println("volume " + cylinderFigure.getVolume());
+        System.out.println("free box volume " + box.getVolume());
+        System.out.println("-------------------------------------------------------------");
 
-	}
+        System.out.println("Parallelepiped");
+        Parallelepiped parallelepipedFigure = new Parallelepiped(1, 2, 3);
+        System.out.println(box.add(parallelepipedFigure));
+        System.out.println("volume " + parallelepipedFigure.getVolume());
+        System.out.println("free box volume " + box.getVolume());
+        System.out.println("-------------------------------------------------------------");
 
+        System.out.println("Pyramid");
+        Pyramid pyramiddFigure = new Pyramid(1, 3);
+        System.out.println(box.add(pyramiddFigure));
+        System.out.println("volume " + pyramiddFigure.getVolume());
+        System.out.println("free box volume " + box.getVolume());
+        System.out.println("-------------------------------------------------------------");
 
+        System.out.println("Sphere");
+        Sphere sphereFigure = new Sphere(1);
+        System.out.println(box.add(sphereFigure));
+        System.out.println("volume " + sphereFigure.getVolume());
+        System.out.println("free box volume " + box.getVolume());
+
+    }
 }
