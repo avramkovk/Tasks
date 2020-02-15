@@ -10,17 +10,19 @@ package jc01_2020.avramkov.lesson08.task02;
 
 public class Application {
 
-	static class Cat {
-	}
+    static class Cat {
+    }
 
-	interface Filter {
-		boolean apply(Object o);
-	}
+    interface Filter {
+        void apply(Object o);
+    }
 
-	public static void main(String[] args) {
-		Object[] array = {"String", 1, 2.0, new Cat(), 85L, new Cat()};
 
-	}
 
+    public static void main(String[] args) {
+        Object[] array = {"String", 1, 2.0, new Cat(), 85L, new Cat()};
+
+
+    }
 
 }
