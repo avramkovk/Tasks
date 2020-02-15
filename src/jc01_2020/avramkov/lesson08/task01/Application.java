@@ -14,10 +14,10 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
         String letter = scanner.next();
 
-        Alphabet.letters numberLetter = Alphabet.letters.valueOf(letter); //valueOf(String name) – возвращает элемент enum
+        Alphabet.letters numberLetter = Alphabet.letters.valueOf(letter);  //valueOf(String name) – возвращает элемент enum
                                                                           // по строковому представлению его имени
         System.out.println(numberLetter.getNumber());
-        System.out.println(Alphabet.letters.valueOf(letter).ordinal());
+        System.out.println(Alphabet.letters.valueOf(letter).ordinal()); //valueOf(letter) возвращает номер элемента в enum
 
     }
 }
