@@ -10,8 +10,8 @@ class MethodFilter implements Filter {
         int onlyDigit = 0;                          //счетчик для тех элементов, которые являются числом
         for (Object value : o) {                   //проходимся по начальному массиву
             if (value instanceof Number) {        //если элемент массива является числом
-                first[indexFirst++] = (Number) value;     //то записываем в его значение число из первого массива.
-                                                         // Делаем преобразование типов из Object в Number
+                first[indexFirst++] = (Number) value;    //то записываем в его значение число из первого массива.
+                                                        // Делаем преобразование типов из Object в Number
                 onlyDigit++;                           //если элемент является числом, то увеличиваем счетчик на 1
             }                                         //в итоге получаем новый массив типа {1,2.0,85,-2,null,null}
         }
@@ -19,15 +19,15 @@ class MethodFilter implements Filter {
 //шаг 2. Создадим новый массив, в котором будут только числа из массива first
         Number[] second = new Number[onlyDigit];         //создаем новый массив, размер которого равен массиву first
         int indexSecond = 0;                            //счетчик элементов нового массива
-        for (int i = 0; i < o.length; i++) {
-            if (first[i] != null) {                   //если значение не равно null, т.е является числом
-                second[indexSecond++] = first[i];    //то записываем в его значение число из первого массива.
+        for (Number number : first) {
+            if (number != null) {                   //если значение не равно null, т.е является числом
+                second[indexSecond++] = number;    //то записываем в его значение число из первого массива.
             }
         }
 
 //шаг 3. Выводим массив на экран
         for (Number num : second) {
-            System.out.println(num );
+            System.out.println(num);
         }
     }
 }

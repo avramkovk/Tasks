@@ -8,7 +8,8 @@ package jc01_2020.avramkov.lesson08.task02.version2;
  *
  */
 
-class Application{
+//вариант 2. через интерфейс и его реализацию в обычном классе
+public class Application {
 
     static class Cat {
     }
