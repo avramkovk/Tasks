@@ -14,8 +14,10 @@ public class Application {
 		Scanner scanner = new Scanner(System.in);
 		String letter = scanner.next();
 
-if(letter == EnumAlphabet.Alphabet.values()){
-    System.out.println();
-}
+        Alphabet.letters numberLetter =Alphabet.letters.valueOf(letter);
+
+    System.out.println(numberLetter.getNumber());
+
 	}
 }
+
