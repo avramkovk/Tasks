@@ -9,7 +9,7 @@ public class Car {
         this.model = model;
         this.size = size;
     }
-    
+
     public Model getModel() {
         return model;
     }

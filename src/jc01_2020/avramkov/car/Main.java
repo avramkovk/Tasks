@@ -8,7 +8,7 @@ public class Main {
         Model[] values = Model.values();
 
         for (int i = 0; i < 50; i++) {
-
+cars.add(new Car(Model.VW,10));
             cars.add(new Car(values[(int) (Math.random() * (values.length))], (int) (Math.random() * 10)));
         }
 
