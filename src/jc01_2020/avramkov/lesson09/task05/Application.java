@@ -10,7 +10,8 @@ package jc01_2020.avramkov.lesson09.task05;
 
 import java.util.Scanner;
 
-public class Application {
+public class
+Application {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
