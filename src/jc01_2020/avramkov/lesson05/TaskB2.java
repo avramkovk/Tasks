@@ -20,13 +20,11 @@ public class TaskB2 {
         String str = scanner.nextLine();
         boolean result = false;
 
-        String regexp = "^[A-Z]{1}[a-z]+[\\-]?[A-Z]{1}[a-z]+$|^[А-Я]{1}[а-я]+[\\-]?[А-Я]{1}[а-я]+$";
+        String regexp = "^[A-Z]{1}[a-z]+[\\-]{1}[A-Z]{1}[a-z]+$|^[А-Я]{1}[а-я]+[\\-]{1}[А-Я]{1}[а-я]+$";
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher = pattern.matcher(str);
 
-        if (matcher.find()) {
-            result = true;
-        } else result = false;
+        result = matcher.find();
 		System.out.println(result);
     }
 }

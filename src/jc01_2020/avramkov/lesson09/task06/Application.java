@@ -10,13 +10,48 @@ package jc01_2020.avramkov.lesson09.task06;
  *
  */
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Application {
 
 	public static void main(String[] args) {
-		// Объявить список
+
+//_______________________________________________________ArrayList
+		ArrayList<Double> arrayList = new ArrayList<>();
+
+long time1ArrayList = System.currentTimeMillis();
+
 		for (int i = 0; i < 1_000_000; i++) {
-			// Заполнить список
+			arrayList.add(Math.random());
 		}
+
+		for (int i = 0; i < 100_000; i++) {
+			arrayList.add(0,0d);
+		}
+
+		long time2ArrayList = System.currentTimeMillis();
+
+		long timeResultArray = time2ArrayList - time1ArrayList;
+		System.out.println("ArrayList " + timeResultArray);
+
+		//_______________________________________________________LinkedList
+		LinkedList<Double> linkedList = new LinkedList<>();
+
+		long time1LinkedList = System.currentTimeMillis();
+
+		for (int i = 0; i < 1_000_000; i++) {
+			arrayList.add(Math.random());
+		}
+
+		for (int i = 0; i < 100_000; i++) {
+			linkedList.addFirst(0d);
+		}
+
+		long time2LinkedList = System.currentTimeMillis();
+
+		long timeResultLinked = time2LinkedList - time1LinkedList;
+		System.out.println("LinkedList " + timeResultLinked);
 	}
 
 }

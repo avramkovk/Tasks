@@ -8,7 +8,7 @@ public class Main {
         Model[] values = Model.values();
 
         for (int i = 0; i < 50; i++) {
-cars.add(new Car(Model.VW,10));
+//cars.add(new Car(Model.VW,10));
             cars.add(new Car(values[(int) (Math.random() * (values.length))], (int) (Math.random() * 10)));
         }
 
@@ -25,7 +25,7 @@ cars.add(new Car(Model.VW,10));
         });
         int count = 0;
         for (int i = 0; i < 50; i++) {
-            count = 0;
+            //count = 0;
             Model model = cars.get(i).getModel();
             if (!map.containsKey(model)) {
 
