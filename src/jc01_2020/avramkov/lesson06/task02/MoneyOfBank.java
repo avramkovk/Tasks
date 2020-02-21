@@ -2,7 +2,7 @@ package jc01_2020.avramkov.lesson06.task02;
 
 import java.util.Scanner;
 
-public class MoneyOfBankomat {
+public class MoneyOfBank {
     public int getAllMoney() {
         return allMoney;
     }
@@ -13,21 +13,21 @@ public class MoneyOfBankomat {
     static int money50;
     static int money100;
 
-    public MoneyOfBankomat() {
+    public MoneyOfBank() {
     }
 
     //для снятия денег с банкомата
-    public MoneyOfBankomat(int userPayment) {
+    public MoneyOfBank(int userPayment) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите сумму: ");
-        MoneyOfBankomat.userPayment = sc.nextInt();
+        MoneyOfBank.userPayment = sc.nextInt();
     }
 
     //для добавления денег в банкомат
-    public MoneyOfBankomat(int money20, int money50, int money100) {
-        MoneyOfBankomat.money20 = money20;
-        MoneyOfBankomat.money50 = money50;
-        MoneyOfBankomat.money100 = money100;
+    public MoneyOfBank(int money20, int money50, int money100) {
+        MoneyOfBank.money20 = money20;
+        MoneyOfBank.money50 = money50;
+        MoneyOfBank.money100 = money100;
     }
 
     public void getUserPayment() { //метод для снятия наличных
@@ -59,14 +59,12 @@ public class MoneyOfBankomat {
     public void addMoneyToBankomat() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите количество 20 рублевых купюр: ");
-        MoneyOfBankomat.money20 = sc.nextInt();
+        MoneyOfBank.money20 = sc.nextInt();
         System.out.println("Введите количество 50 рублевых купюр: ");
-        MoneyOfBankomat.money50 = sc.nextInt();
+        MoneyOfBank.money50 = sc.nextInt();
         System.out.println("Введите количество 100 рублевых купюр: ");
-        MoneyOfBankomat.money100 = sc.nextInt();
+        MoneyOfBank.money100 = sc.nextInt();
 
-
-        Scanner input = new Scanner(System.in);
         System.out.println("Добавлено:");
         System.out.println("Добавлено 20-рублевых купюр: " + money20);
         System.out.println("Добавлено 50-рублевых купюр: " + money50);

@@ -19,13 +19,13 @@ while(num != 0) {
 
     switch (num) {           //снятие денег
         case 1:
-            MoneyOfBankomat newPayment = new MoneyOfBankomat(MoneyOfBankomat.userPayment);
+            MoneyOfBank newPayment = new MoneyOfBank(MoneyOfBank.userPayment);
             newPayment.getUserPayment();
             System.out.println("Остаток денег в банкомате: " + newPayment.getAllMoney() + " рублей");
             break;
         case 2:             //добавление денег
 
-            MoneyOfBankomat addMoney = new MoneyOfBankomat(MoneyOfBankomat.money20, MoneyOfBankomat.money50, MoneyOfBankomat.money100);
+            MoneyOfBank addMoney = new MoneyOfBank(MoneyOfBank.money20, MoneyOfBank.money50, MoneyOfBank.money100);
             addMoney.addMoneyToBankomat();
             System.out.println("Остаток денег в банкомате: " + addMoney.getAllMoney() + " рублей");
             break;

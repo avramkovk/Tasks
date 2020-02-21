@@ -16,6 +16,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		// Объявить список
+
 		for (int i = 0; i < 5; i++) {
 			// Заполнить список
 		}
