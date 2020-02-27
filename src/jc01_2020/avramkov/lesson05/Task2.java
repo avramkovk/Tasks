@@ -19,18 +19,24 @@ public class Task2 {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 
-        System.out.println(str);
-		String[] strArray = str.trim().split(" "); //trim() - удаляет пробелы в начале и конце строки
-        //for (int i = 0; i < strArray.length; i++) {       //split(" ") - возвращает массив из элементов, которые были разделены пробелом
-        //   System.out.print(strArray[i]);
-        //}
-        String joinArray = String.join("", strArray);
-        String reverse = new StringBuilder(joinArray).reverse().toString();
+        String noReverse = str.trim().toLowerCase().replace(" ","");
+        String reverse = new StringBuilder(noReverse).reverse().toString();
 
-        if (joinArray.equalsIgnoreCase(reverse)){
+        if (noReverse.equals(reverse)){
             System.out.println("Да");
         } else System.out.println("Нет");
 
 
+		/*вариант №2
+		String[] strArray = str.trim().toLowerCase().split(" ");
+        StringBuilder strBuilder = new StringBuilder(strArray.length);
+        for (String s : strArray) {
+            strBuilder.append(s);
+        }
+        String noReverse = strBuilder.toString();
+        String reverse = new StringBuilder(strBuilder).reverse().toString();
+        if (noReverse.equals(reverse)){
+            System.out.println("Да");
+        } else System.out.println("Нет");*/
     }
 }
