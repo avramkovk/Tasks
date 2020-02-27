@@ -17,22 +17,24 @@ public class Application {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите строку:");
         String strOld = scanner.nextLine();
-//1
+
+//1. преобразование строки в массив: удаляем пробелы в начале и конце, приводим все к нижнему регистру. Новый массив будет
+//состоять из элементов, ранее разделенных пробелами
         String[] arrayOld = strOld.toLowerCase().trim().split(" ");
-//2
+//2. преобразование массива из п.1 в строку через StringBuilder
         StringBuilder sb = new StringBuilder(arrayOld.length);
         for (String str : arrayOld) {
             sb.append(str);
         }
-//3
+//3. преобразование StringBuilder в строку
         String strNew = sb.toString();
-//4
+//4. созданием массива из строки, где каждый символ строки будет являться отдельным элементом массива
         String[] arrayNew = strNew.split("");
-//5
-        HashSet<String> mySet = new HashSet<>();
-		mySet.addAll(Arrays.asList(arrayNew));
-//6
+//5. создание карты. В нее помещаются все значения из массива
+        HashSet<String> mySet = new HashSet<>(Arrays.asList(arrayNew));
+//6. вывод первых 5 элементов карты на экран через итератор
         Iterator<String> iterator = mySet.iterator();
         for (int i = 0; i < 5; i++) {
             if (iterator.hasNext()) {

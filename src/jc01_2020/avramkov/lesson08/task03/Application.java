@@ -116,8 +116,8 @@ public class Application {
             return null;
         }
         public int getDayOfYear(){
-            if(leapYear) return 356;
-            else return 355;
+            if(leapYear) return 366;
+            else return 365;
         }
 
 
@@ -188,12 +188,14 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        Date date1 = new Date(16, 88, 2020);
+        Date date1 = new Date(25, 2, 2020);
 
         System.out.println(date1.leapYear);//проверка года на високосность
         System.out.println(date1.getDayOfYear());//вывод количества дней в году
         System.out.println(date1.getDayOfWeek()); //вывод дня недели по дате
-
+        System.out.println(date1.getDay());
+        System.out.println(date1.getMonth());
+        System.out.println(date1.getYear());
 
     }
 }
