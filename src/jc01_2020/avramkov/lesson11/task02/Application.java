@@ -21,23 +21,36 @@ import java.util.Random;
 
 public class Application {
 
-	public static void main(String[] args) throws Exception {
-		invokeMethodWithException();
-	}
+    public static void main(String[] args) throws Exception {
+        try {
+            invokeMethodWithException();
+        } catch (NullPointerException e) {
+            System.out.println("NPE");
+        } catch (FileNotFoundException e) {
+            System.out.println("File is absent");
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException");
+        } catch (NumberFormatException e) {
+            System.out.println("NumberFormatException");
 
-	private static void invokeMethodWithException() throws NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException {
-		int i = new Random().nextInt(5);
-		if (i == 0) {
-			throw new NullPointerException();
-		} else if (i == 1) {
-			throw new ArithmeticException();
-		} else if (i == 2) {
-			throw new FileNotFoundException();
-		} else if (i == 3) {
-			throw new URISyntaxException("", "");
-		} else if (i == 4) {
-			throw new NumberFormatException();
-		}
-	}
+        } finally {
+            System.out.println("Program finished successfully");
+        }
+    }
+
+    private static void invokeMethodWithException() throws NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException {
+        int i = new Random().nextInt(5);
+        if (i == 0) {
+            throw new NullPointerException();
+        } else if (i == 1) {
+            throw new ArithmeticException();
+        } else if (i == 2) {
+            throw new FileNotFoundException();
+        } else if (i == 3) {
+            throw new URISyntaxException("", "");
+        } else if (i == 4) {
+            throw new NumberFormatException();
+        }
+    }
 
 }

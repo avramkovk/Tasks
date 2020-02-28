@@ -23,7 +23,7 @@ public class Application {
         ArrayList<String> array = new ArrayList<>(); //для сбора ключей со значениями-дубликатами
 
         for (Map.Entry<String, String> entry1 : map.entrySet()) {
-            int count = 1; //если есть 1 совпадение, то значит в Мапе есть 2 таких дубликата
+            int count = 1; // 1 - значит, что пара уникальна
             for (Map.Entry<String, String> entry2 : map.entrySet()) {
                 //если ключи разные,а значения совпадают.
                 if (!entry1.getKey().equals(entry2.getKey()) && entry1.getValue().equals(entry2.getValue())) {
