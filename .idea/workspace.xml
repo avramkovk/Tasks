@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65a64a07-ef5c-4985-9bf2-44c73f3435cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson10/task04/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson10/task04/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson11/task02/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson11/task02/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson11/task03/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson11/task03/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <recent name="D:\students\avramkov\src\jc01_2020\avramkov" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application (1)">
+  <component name="RunManager" selected="Application.Application (2)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson11.task03.Application" />
       <module name="Tasks" />
@@ -80,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson08.task03.Application" />
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson11.task02.Application" />
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jc01_2020.avramkov.lesson08.task03.*" />
+          <option name="PATTERN" value="jc01_2020.avramkov.lesson11.task02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,11 +91,11 @@
       </method>
     </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson11.task02.Application" />
+      <option name="MAIN_CLASS_NAME" value="jc01_2020.avramkov.lesson08.task03.Application" />
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jc01_2020.avramkov.lesson11.task02.*" />
+          <option name="PATTERN" value="jc01_2020.avramkov.lesson08.task03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application (2)" />
+        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.Testing09_04" />
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582907187173</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="11. +++">
+      <created>1582914896394</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582914896394</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -285,7 +289,8 @@
     <MESSAGE value="11. 1 +" />
     <MESSAGE value="4. 4-5 +&#10;5. 2 +" />
     <MESSAGE value="8. 3 +" />
-    <option name="LAST_COMMIT_MESSAGE" value="8. 3 +" />
+    <MESSAGE value="11. +++" />
+    <option name="LAST_COMMIT_MESSAGE" value="11. +++" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1582231457156">
@@ -308,6 +313,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="531" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.738@0.0.1366.738" timestamp="1582813447465" />
+    <state x="206" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582915601250">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="206" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1582915601250" />
     <state x="438" y="76" key="#xdebugger.evaluate" timestamp="1582398494147">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -316,26 +325,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="430" y="225" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1582904167694" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1582914847065">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1582914895301">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1582914847065" />
-    <state width="1367" height="192" key="GridCell.Tab.0.bottom" timestamp="1582914885420">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1582914895301" />
+    <state width="1367" height="192" key="GridCell.Tab.0.bottom" timestamp="1582915628171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="192" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582914885420" />
-    <state width="1367" height="192" key="GridCell.Tab.0.center" timestamp="1582914885419">
+    <state width="1367" height="192" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582915628171" />
+    <state width="1367" height="192" key="GridCell.Tab.0.center" timestamp="1582915628171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="192" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582914885419" />
-    <state width="1367" height="192" key="GridCell.Tab.0.left" timestamp="1582914885419">
+    <state width="1367" height="192" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582915628171" />
+    <state width="1367" height="192" key="GridCell.Tab.0.left" timestamp="1582915628171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="192" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582914885419" />
-    <state width="1367" height="192" key="GridCell.Tab.0.right" timestamp="1582914885419">
+    <state width="1367" height="192" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582915628171" />
+    <state width="1367" height="192" key="GridCell.Tab.0.right" timestamp="1582915628171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="192" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582914885419" />
+    <state width="1367" height="192" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582915628171" />
     <state width="1367" height="243" key="GridCell.Tab.1.bottom" timestamp="1582903588369">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -360,10 +369,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1582231836939" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1582907190625">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1582914898313">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1582907190625" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1582914898313" />
     <state x="714" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1582881543521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -404,11 +413,6 @@
           <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/lesson05/Task2.java</url>
           <line>18</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/lesson08/task03/Application.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/aaa.java</url>

@@ -46,11 +46,11 @@ public class Application {
         public int getYear() { return this.year; }
         public boolean leapYear() { return leapYear; }
 
-        public Months getNameMonths() {
+        public MonthName getNameMonth() {
             int m = month - 1;
-            for (Months months : Months.values()) {
-                if (m == months.ordinal()) {
-                    return months;
+            for (MonthName monthName : MonthName.values()) {
+                if (m == monthName.ordinal()) {
+                    return monthName;
                 }
             }
             return null;
@@ -159,6 +159,6 @@ public class Application {
         System.out.println(date1.year + " високосный? - " + date1.leapYear());//проверка года на високосность
         System.out.println("В " + date1.year + " году дней " + date1.getDayOfYear());
         System.out.println("День недели " + date1.getDayOfWeek()); //вывод дня недели по дате
-        System.out.println("Месяц " + date1.getNameMonths());
+        System.out.println("Месяц " + date1.getNameMonth());
     }
 }
