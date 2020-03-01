@@ -27,92 +27,105 @@ package jc01_2020.avramkov.lesson08.task03;
  * использование вложенных классов и перечисления.
  *
  */
+
 import java.text.SimpleDateFormat;
+
 public class Application {
     public static class Date {
 
-        private  int day;
-        private  int month;
-        private  int year;
-        boolean leapYear = new Year().leapYear();
+        private int day;
+        private int month;
+        private int year;
 
         public Date(int day, int month, int year) {
             this.day = day;
             this.month = month;
             this.year = year;
         }
-        public int getDay() { return this.day; }
-        public int getNumberMonth() { return this.month; }
-        public int getYear() { return this.year; }
-        public boolean leapYear() { return leapYear; }
 
-        public MonthName getNameMonth() {
-            int m = month - 1;
-            for (MonthName monthName : MonthName.values()) {
-                if (m == monthName.ordinal()) {
-                    return monthName;
-                }
-            }
-            return null;
+        public int getDay() {
+            return this.day;
         }
 
-        public DayOfWeek getDayOfWeek() {
-            //для этой формулы
-            //нумерация дней недели начинается с воскресенья - 0, понедельник - 1, ...пятница - 5, суббота - 6.
-            //нумерация месяцев начинается с марта - 1, апрель - 2, ...январь - 11, февраль - 12.
-
-            int myDay = day;
-            int myMonth = month;
-            int myYear = year;
-            int century = year / 100; //количество столетий
-
-            if (myMonth < 3 && myYear % 100 == 0) { //если месяц январь и февраль и столетие нулевое, т.е 00, например 1900
-                --century;//берем предыдущее столетие, т.е 18
-                --myYear;// 1899
-                myMonth += 10; //месяц февраль станет 12
-            } else if (myMonth >= 3 && myYear % 100 == 0) { //если месяц от марта и далее и столетие так же нулевое
-                --century;//берем предыдущее столетие, т.е 18
-                myMonth -= 2; //уменьшаем значение месяца на 2
-            } else if (myMonth < 3) { //если месяц меньше 3 и любой другой год
-                --myYear; //год уменьшаем на 1
-                myMonth += 10; //значение месяца увеличиваем на 10
-            } else //если не удовлетворяем этим условиям
-                myMonth -= 2;
-
-            int y = myYear - century * 100; //количество лет в столетии
-            int w = (myDay + (13 * myMonth - 1) / 5 + y + y / 4 + century / 4 - 2 * century) % 7;
-
-            for (DayOfWeek num : DayOfWeek.values()) {
-                if (w == num.ordinal()) {
-                    return num;
-                }
-            }
-            return null;
+        public int getNumberMonth() {
+            return this.month;
         }
 
-        public int getDayOfYear() {
-            if (leapYear()) return 366;
-            else return 365;
+        public int getYear() {
+            return this.year;
         }
+
 
         class Year {
-            private  boolean leapYear() {
-                return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+
+            public boolean leapYear() {
+                return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+            }
+
+            public int getDayOfYear() {
+                if (leapYear()) return 366;
+                else return 365;
             }
 
             class Month {
-                public int getDays(int monthNumber, boolean leapYear) {
-                    monthNumber = month;
-                    if (monthNumber == 2) {
-                        return leapYear ? 28 : 29;
-                    } else return monthNumber % 2 == 1 ? 31 : 30;
+
+                public MonthName getNameMonth() {
+                    int m = month - 1;
+                    for (MonthName monthName : MonthName.values()) {
+                        if (m == monthName.ordinal()) {
+                            return monthName;
+                        }
+                    }
+                    return null;
                 }
 
-                class Day { }
+                public int getMonthDays() {
+                    if (month == 2) {
+                        return leapYear() ? 28 : 29;
+                    } else return month % 2 == 1 ? 31 : 30;
+                }
+
+                class Day {
+
+                    public DayOfWeek getDayOfWeek() {
+                        //для этой формулы
+                        //нумерация дней недели начинается с воскресенья - 0, понедельник - 1, ...пятница - 5, суббота - 6.
+                        //нумерация месяцев начинается с марта - 1, апрель - 2, ...январь - 11, февраль - 12.
+
+                        int myDay = day;
+                        int myMonth = month;
+                        int myYear = year;
+                        int century = year / 100; //количество столетий
+
+                        if (myMonth < 3 && myYear % 100 == 0) { //если месяц январь и февраль и столетие нулевое, т.е 00, например 1900
+                            --century;//берем предыдущее столетие, т.е 18
+                            --myYear;// 1899
+                            myMonth += 10; //месяц февраль станет 12
+                        } else if (myMonth >= 3 && myYear % 100 == 0) { //если месяц от марта и далее и столетие так же нулевое
+                            --century;//берем предыдущее столетие, т.е 18
+                            myMonth -= 2; //уменьшаем значение месяца на 2
+                        } else if (myMonth < 3) { //если месяц меньше 3 и любой другой год
+                            --myYear; //год уменьшаем на 1
+                            myMonth += 10; //значение месяца увеличиваем на 10
+                        } else //если не удовлетворяем этим условиям
+                            myMonth -= 2;
+
+                        int y = myYear - century * 100; //количество лет в столетии
+                        int w = (myDay + (13 * myMonth - 1) / 5 + y + y / 4 + century / 4 - 2 * century) % 7;
+
+                        for (DayOfWeek num : DayOfWeek.values()) {
+                            if (w == num.ordinal()) {
+                                return num;
+                            }
+                        }
+                        return null;
+                    }
+                }
             }
         }
     }
-    static void  daysBetween(Date startDate, Date endDate){     //метод посчета разницы дат
+
+    static void daysBetween(Date startDate, Date endDate) {     //метод посчета разницы дат
         StringBuilder sbDate1 = new StringBuilder();
         sbDate1.append(startDate.getDay()).append(".");
         sbDate1.append(startDate.getNumberMonth()).append(".");
@@ -140,25 +153,29 @@ public class Application {
 
         assert dateOne != null;
         assert dateTwo != null;
-        // Количество дней между датами в миллисекундах
-        long difference = dateOne.getTime() - dateTwo.getTime();
-        // Перевод количества дней между датами из миллисекунд в дни
-        // Вывод разницы между датами в днях на экран
-        int i= (int)(difference / (24 * 60 * 60 * 1000));
-        if(i < 0){
-            i = -i;//если вторая дата больше первой
-        }
+
+        long difference = Math.abs(dateOne.getTime() - dateTwo.getTime());// Количество дней между датами в миллисекундах
+        long i = difference / (24 * 60 * 60 * 1000);// Перевод количества дней между датами из миллисекунд в дни
         System.out.println("Разница дат равна " + i + " дн.");
     }
+
     public static void main(String[] args) {
-        Date date1 = new Date(28, 2, 2020);
-        Date date2 = new Date(10, 12, 2021);
-        daysBetween(date1,date2);
+        Date date1 = new Date(28, 2, 2001);
+        Date date2 = new Date(10, 12, 2020);
+
+        Date.Year year1 = date1.new Year();
+        Date.Year year2 = date2.new Year();
+        Date.Year.Month month1 = year1.new Month();
+        Date.Year.Month.Day day1 = month1.new Day();
+
+        daysBetween(date1, date2);
+
         System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println("Характеристика даты " + date1.getDay() + "." + date1.getNumberMonth() + "." + date1.getYear());
-        System.out.println(date1.year + " високосный? - " + date1.leapYear());//проверка года на високосность
-        System.out.println("В " + date1.year + " году дней " + date1.getDayOfYear());
-        System.out.println("День недели " + date1.getDayOfWeek()); //вывод дня недели по дате
-        System.out.println("Месяц " + date1.getNameMonth());
+        System.out.println("Год високосный? - " + year1.leapYear());
+        System.out.println("В году дней " + year1.getDayOfYear());
+        System.out.println("Месяц " + month1.getNameMonth());
+        System.out.println("Дней в месяце " + month1.getMonthDays());
+        System.out.println("День недели " + day1.getDayOfWeek());
     }
 }

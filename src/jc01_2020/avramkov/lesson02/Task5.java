@@ -21,9 +21,7 @@ public class Task5 {
 		System.out.println("Введите год: ");
 		int year = scanner.nextInt();
 
-		if (year % 4 == 0 && year % 100 != 0) {
-			System.out.println("Високосный");
-		} else if (year % 400 == 0){
+		if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
 			System.out.println("Високосный");
 		} else System.out.println("Обычный");
 	}
