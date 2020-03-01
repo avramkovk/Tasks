@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a64a07-ef5c-4985-9bf2-44c73f3435cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Bicycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/MapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson02/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson02/Task5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/car/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/car/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/car/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/car/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson08/task03/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson08/task03/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/test1/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/test1/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/test1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/test1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582915655224</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="8. 3 update">
+      <created>1583075063580</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583075063580</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -348,26 +359,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="430" y="225" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1582904167694" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1582915654146">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1583096829597">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1582915654146" />
-    <state width="1367" height="241" key="GridCell.Tab.0.bottom" timestamp="1583074989749">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1583096829597" />
+    <state width="1367" height="278" key="GridCell.Tab.0.bottom" timestamp="1583096814918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="241" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583074989749" />
-    <state width="1367" height="241" key="GridCell.Tab.0.center" timestamp="1583074989749">
+    <state width="1367" height="278" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583096814918" />
+    <state width="1367" height="278" key="GridCell.Tab.0.center" timestamp="1583096814918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="241" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583074989748" />
-    <state width="1367" height="241" key="GridCell.Tab.0.left" timestamp="1583074989748">
+    <state width="1367" height="278" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583096814918" />
+    <state width="1367" height="278" key="GridCell.Tab.0.left" timestamp="1583096814918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="241" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583074989748" />
-    <state width="1367" height="241" key="GridCell.Tab.0.right" timestamp="1583074989749">
+    <state width="1367" height="278" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583096814918" />
+    <state width="1367" height="278" key="GridCell.Tab.0.right" timestamp="1583096814918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="241" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583074989749" />
+    <state width="1367" height="278" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583096814918" />
     <state width="1367" height="183" key="GridCell.Tab.1.bottom" timestamp="1583068819222">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -392,10 +403,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1582231836939" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1582915656927">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1583075074858">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1582915656927" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1583075074858" />
     <state x="714" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1583067239691">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

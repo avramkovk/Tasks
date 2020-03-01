@@ -1,4 +1,4 @@
-package jc01_2020.avramkov.test1;
+package jc01_2020.avramkov.Atest.test1;
 
 import java.util.Random;
 import java.util.Scanner;

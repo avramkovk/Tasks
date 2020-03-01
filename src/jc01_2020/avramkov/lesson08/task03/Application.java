@@ -55,20 +55,16 @@ public class Application {
             return this.year;
         }
 
-
         class Year {
-
             public boolean leapYear() {
                 return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
             }
-
             public int getDayOfYear() {
                 if (leapYear()) return 366;
                 else return 365;
             }
 
             class Month {
-
                 public MonthName getNameMonth() {
                     int m = month - 1;
                     for (MonthName monthName : MonthName.values()) {
@@ -78,15 +74,13 @@ public class Application {
                     }
                     return null;
                 }
-
                 public int getMonthDays() {
-                    if (month == 2) {
-                        return leapYear() ? 28 : 29;
-                    } else return month % 2 == 1 ? 31 : 30;
+                    int [] daysInMonths = {31,28,31,30,31,30,31,31,30,31,30,31};
+                    daysInMonths[1] += leapYear() ? 1 : 0;
+                    return daysInMonths[month-1];
                 }
 
                 class Day {
-
                     public DayOfWeek getDayOfWeek() {
                         //для этой формулы
                         //нумерация дней недели начинается с воскресенья - 0, понедельник - 1, ...пятница - 5, суббота - 6.
@@ -127,14 +121,10 @@ public class Application {
 
     static void daysBetween(Date startDate, Date endDate) {     //метод посчета разницы дат
         StringBuilder sbDate1 = new StringBuilder();
-        sbDate1.append(startDate.getDay()).append(".");
-        sbDate1.append(startDate.getNumberMonth()).append(".");
-        sbDate1.append(startDate.getYear());
+        sbDate1.append(startDate.getDay()).append(".").append(startDate.getNumberMonth()).append(".").append(startDate.getYear());
 
         StringBuilder sbDate2 = new StringBuilder();
-        sbDate2.append(endDate.getDay()).append(".");
-        sbDate2.append(endDate.getNumberMonth()).append(".");
-        sbDate2.append(endDate.getYear());
+        sbDate2.append(endDate.getDay()).append(".").append(endDate.getNumberMonth()).append(".").append(endDate.getYear());
 
         String sdate1 = new String(sbDate1);
         String sdate2 = new String(sbDate2);
@@ -160,11 +150,10 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        Date date1 = new Date(28, 2, 2001);
+        Date date1 = new Date(28, 12, 2020);
         Date date2 = new Date(10, 12, 2020);
 
         Date.Year year1 = date1.new Year();
-        Date.Year year2 = date2.new Year();
         Date.Year.Month month1 = year1.new Month();
         Date.Year.Month.Day day1 = month1.new Day();
 
