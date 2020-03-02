@@ -10,17 +10,47 @@ package jc01_2020.avramkov.lesson12;
  *
  */
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Task3 {
 	public static void main(String[] args) {
 
 		Map<String, String> map = new HashMap<>();
-		// full the map
+		map.put("Петров", "Петр");
+		map.put("Иванов", "Иван");
+		map.put("Сидоров", "Сидор");
+		map.put("Павлов", "Павел");
+		map.put("Валерьянов", "Валерий");
+		map.put("Леонтьев", "Леонтий");
+		map.put("Савельев", "Савелий");
+		map.put("Игнатьев", "Игнатий");
+		map.put("Борисов", "Борис");
+		map.put("Дмитриев", "Дмитрий");
+		map.put("Геннадьев", "Геннадий");
+		map.put("Филлиппов", "Филипп");
+		map.put("Артемьев", "Артемий");
+		map.put("Владимиров", "Владимир");
+		map.put("Юрьев", "Юрий");
+		map.put("Платонов", "Платон");
+		map.put("Евгеньев", "Евгений");
+		map.put("Григорьев", "Григорий");
+		map.put("Романов", "Роман");
+		map.put("Сергеев", "Сергей");
 
-		String longName = null; // use map here: longName = map...
+		map.replaceAll((key,value) -> value+key);
 
+		Map<String, String> collect = map.entrySet()
+				.stream()
+				.filter(x -> x.getValue().length() < 16)
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+		List<String> list = new ArrayList<>();
+		for(Map.Entry<String,String> value: collect.entrySet()){
+			list.add(value.getValue());
+		}
+
+		String longName = Collections.max(list, Comparator.comparingInt(String::length));
 		System.out.println("longName = " + longName);
 
 	}
