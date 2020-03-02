@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a64a07-ef5c-4985-9bf2-44c73f3435cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/StartWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="65a64a07-ef5c-4985-9bf2-44c73f3435cc" name="Default Changelist" comment="employee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jc01_2020/avramkov/lesson04/Task4.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
@@ -289,7 +283,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583174894472" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583175024589" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -411,7 +405,7 @@
       <workItem from="1582217943880" duration="3805000" />
       <workItem from="1582563583213" duration="5163000" />
       <workItem from="1582818889403" duration="4956000" />
-      <workItem from="1583165033868" duration="9216000" />
+      <workItem from="1583165033868" duration="9452000" />
     </task>
     <task id="LOCAL-00001" summary="6">
       <created>1580400664264</created>
@@ -469,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583165110824</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="employee">
+      <created>1583175012889</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583175012889</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -481,13 +482,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41932000" />
+    <option name="totallyTimeSpent" value="42168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21409395" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21409395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -496,7 +497,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29320112" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29320112" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -570,7 +571,8 @@
     <MESSAGE value="20.02" />
     <MESSAGE value="24.02" />
     <MESSAGE value="02.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="02.03" />
+    <MESSAGE value="employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="28" key="#Updates" timestamp="1581595893948">
@@ -915,7 +917,7 @@
     <entry file="file://$PROJECT_DIR$/src/jc01_2020/avramkov/Atest/Employee/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
