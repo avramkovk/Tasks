@@ -150,7 +150,7 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        Date date1 = new Date(28, 12, 2020);
+        Date date1 = new Date(5, 3, 2020);
         Date date2 = new Date(10, 12, 2020);
 
         Date.Year year1 = date1.new Year();

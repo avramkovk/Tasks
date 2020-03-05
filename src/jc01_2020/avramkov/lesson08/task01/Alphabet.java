@@ -1,6 +1,6 @@
 package jc01_2020.avramkov.lesson08.task01;
 
-public class Alphabet extends Application {
+public class Alphabet  {
 
     enum letters {
         A(1), B(2), C(3), D(4), E(5), F(6), G(7), H(8),

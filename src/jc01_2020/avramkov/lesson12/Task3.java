@@ -46,8 +46,8 @@ public class Task3 {
 				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
 		List<String> list = new ArrayList<>();
-		for(Map.Entry<String,String> value: collect.entrySet()){
-			list.add(value.getValue());
+		for(Map.Entry<String,String> s: collect.entrySet()){
+			list.add(s.getValue());
 		}
 
 		String longName = Collections.max(list, Comparator.comparingInt(String::length));

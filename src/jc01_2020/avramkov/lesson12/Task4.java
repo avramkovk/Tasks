@@ -13,8 +13,30 @@ package jc01_2020.avramkov.lesson12;
  *
  */
 
-public class Task4 {
-	public static void main(String[] args) {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.stream.Collectors;
 
-	}
+public class Task4 {
+    public static void main(String[] args) {
+        Map<Car, String> auto = new HashMap<>();
+        Random r = new Random();
+
+		for (int i = 0; i < 5; i++) {
+            auto.put(new Car(r.toString()), "empty");
+        }
+/*        Map<Car, String> collect = auto.values()
+                .stream()
+                .peek(v -> v.replace("empty", Car.Color.values()[r.nextInt(3)].toString())
+                        .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
+        System.out.println(collect);*/
+    }
+}
+class Car {
+    enum Color {BLACK, WHITE, GREEN}
+    String color;
+    public Car(String color) {
+        this.color = color;
+    }
 }
