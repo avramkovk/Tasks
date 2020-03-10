@@ -13,28 +13,27 @@ package jc01_2020.avramkov.lesson12;
  *
  */
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Task4 {
+    private static Random r = new Random();
+
+    private static String randomColor(){
+        return Car.Color.values()[r.nextInt(5)].toString();
+    }
+
     public static void main(String[] args) {
         Map<Car, String> autoWithEmptyValue = new HashMap<>();
-        Random r = new Random();
 
         for (int i = 0; i < 5; i++) {
-            autoWithEmptyValue.put(new Car(Car.Color.values()[r.nextInt(5)].toString()), "empty");
+            autoWithEmptyValue.put(new Car(randomColor()), "empty");
         }
-        System.out.println(autoWithEmptyValue);
-try{
+
 //заполнение Карты с автобилями. Значение ключа берется старое, а в значение записывается рандомный цвет
         Map<Car, String> autoFullMap = autoWithEmptyValue.entrySet()
                 .stream()
-                .collect(Collectors.toMap(k -> k.getKey(), v -> Car.Color.values()[r.nextInt(5)].toString()));
+                .collect(Collectors.toMap(k -> k.getKey(), v -> randomColor()));
         System.out.println(autoFullMap);
 
         String lastCarColor = Objects.requireNonNull(autoFullMap
@@ -52,8 +51,6 @@ try{
                 .filter(x -> x.getValue().equals(lastCarColor)) //выбираем авто, у которых совпадает цвет с последним авто
                 .anyMatch(x -> true);//если есть хоть 1 авто, то выводим true
         System.out.println(lastColor);
-    }catch (NullPointerException e){
-    System.out.println("словили NullPointerException");}
     }
 }
 
