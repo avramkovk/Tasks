@@ -6,7 +6,6 @@ package jc01_2020.avramkov.lesson13;
  * результат сравнения этих дат (дата1 больше/меньше/равна дата2)
  *
  */
-
 import java.time.LocalDate;
 import java.util.Random;
 
@@ -17,7 +16,9 @@ public class Task1 {
         LocalDate date1 = LocalDate.of(2020, 3, r.nextInt(4) + 1);
         LocalDate date2 = LocalDate.of(2020, 3, r.nextInt(4) + 1);
         compareDate(date1, date2);
+
     }
+
 
     public static void compareDate(LocalDate otherDate1, LocalDate otherDate2) {
         if (otherDate1.isAfter(otherDate2)) {

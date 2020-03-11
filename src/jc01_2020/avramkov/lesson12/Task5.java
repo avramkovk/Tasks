@@ -9,31 +9,34 @@ package jc01_2020.avramkov.lesson12;
 
 public class Task5 {
     public static void main(String[] args) {
-        Cat first = new Cat("Рыжик", 5);
+        Cat first = new Cat("Рыжик", 11);
         Cat second = new Cat("Пушок", 5);
 
-        LifeCompare lifeCompare = (x, y) -> {
-
-            if (x.getLifeCat() == y.getLifeCat()) {
+        LifeCompare lifeCompare = (first1, second1) -> {
+            if (first1.getLifeCat() == second1.getLifeCat()) {
                 return "Коты имеют одинаковое количество жизней";
-
-            } else if (x.getLifeCat() > y.getLifeCat()) {
-                return x.getNameCat();
+            } else if (first1.getLifeCat() > second1.getLifeCat()) {
+                return first1.getNameCat();
             }
-
-            return y.getNameCat();
+            return first1.getNameCat();
         };
+
         System.out.println(lifeCompare.compareCats(first, second));
 
     }
 }
 
 class Cat {
-    String nameCat;
-    int lifeCat;
+    private String nameCat;
+    private int lifeCat;
 
-    public String getNameCat() { return nameCat; }
-    public int getLifeCat() { return lifeCat; }
+    public String getNameCat() {
+        return nameCat;
+    }
+
+    public int getLifeCat() {
+        return lifeCat;
+    }
 
     public Cat(String nameCat, int lifeCat) {
         this.nameCat = nameCat;
@@ -41,4 +44,6 @@ class Cat {
     }
 }
 
-interface LifeCompare { String compareCats(Cat first, Cat second);}
+interface LifeCompare {
+    String compareCats(Cat first, Cat second);
+}

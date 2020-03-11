@@ -9,8 +9,8 @@ package jc01_2020.avramkov.lesson10.task03;
  */
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Application {
@@ -20,7 +20,18 @@ public class Application {
         System.out.println("Введите строку:");
         String strOld = scanner.nextLine();
 
-//1. преобразование строки в массив: удаляем пробелы в начале и конце, приводим все к нижнему регистру. Новый массив будет
+        String[] arrayOld = strOld.toLowerCase().split("");                       // #1
+        LinkedHashSet<String> hashSet = new LinkedHashSet<>(Arrays.asList(arrayOld));   // #2
+        int count = 0;                                                                  // #3
+        Iterator<String> iterator = hashSet.iterator();
+        while (iterator.hasNext() && count < 5) {
+            System.out.print(iterator.next());
+            count++;
+        }
+
+
+
+/*//1. преобразование строки в массив: удаляем пробелы в начале и конце, приводим все к нижнему регистру. Новый массив будет
 //состоять из элементов, ранее разделенных пробелами
         String[] arrayOld = strOld.toLowerCase().trim().split(" ");
 //2. преобразование массива из п.1 в строку через StringBuilder
@@ -38,8 +49,8 @@ public class Application {
         Iterator<String> iterator = mySet.iterator();
         for (int i = 0; i < 5; i++) {
             if (iterator.hasNext()) {
-                System.out.println(iterator.next());
+                System.out.print(iterator.next());
             }
-        }
+        }*/
     }
 }
