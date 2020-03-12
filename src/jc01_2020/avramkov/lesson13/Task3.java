@@ -47,11 +47,11 @@ public class Task3 {
     public static void allBirthDay(Map<String, LocalDate> map, LocalDate otherDate) {
         System.out.println("Ближайшие дни рождения к дате " + otherDate);
         for (Map.Entry<String, LocalDate> entry : map.entrySet()) {
-            int t = entry.getValue().getDayOfYear() - otherDate.getDayOfYear();
-            if (t > 0 && t < 30) {
-                System.out.println(entry.getKey() + ", осталось " + t + " дн.");
-            } else if ((t < 0 && t > -30)) {
-                System.out.println("День рождения " + entry.getKey() + " был " + Math.abs(t) + " дн. назад");
+            int daysDifference = entry.getValue().getDayOfYear() - otherDate.getDayOfYear();
+            if (daysDifference > 0 && daysDifference < 30) {
+                System.out.println(entry.getKey() + ", осталось " + daysDifference + " дн.");
+            } else if ((daysDifference < 0 && daysDifference > -30)) {
+                System.out.println("День рождения " + entry.getKey() + " был " + Math.abs(daysDifference) + " дн. назад");
             }
         }
     }
