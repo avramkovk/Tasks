@@ -33,6 +33,7 @@ public class Task3 {
         System.out.println("--------------------------------------------------------------------");
         allBirthDay(birthDayMap, LocalDate.of(2020, 3, 10));
         System.out.println("--------------------------------------------------------------------");
+        System.out.println("Сегодня " + LocalDate.now());
         birthDayName("Anna");
         birthDayName("Rob");
         birthDayName("Elza");
