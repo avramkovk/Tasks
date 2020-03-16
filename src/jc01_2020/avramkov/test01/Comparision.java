@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Comparision {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
         int firstSum = 0;
         int secondSum = 0;
@@ -21,50 +21,40 @@ public class Comparision {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         String[] arr = str.split("");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
 
         ArrayList<Integer> arrayList = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-
-       arrayList.add(Integer.parseInt(arr[i]));
-
+        for (String s : arr) {
+            arrayList.add(Integer.parseInt(s));
         }
-        System.out.print(arrayList);
 
-        for (int i = 0; i <arrayList.size() ; i++) {
-            if((i+1)%4 ==0){
-                if(arrayList.get(i) >5){
+        for (int i = 0; i < arrayList.size(); i++) {
+            if ((i + 1) % 4 == 0) {
+                if (arrayList.get(i) > 5) {
                     firstSum = firstSum + arrayList.get(i);
                 }
-
             }
         }
 
-        for (int i = 0; i <arrayList.size() ; i++) {
-            if((i+1)%2 ==0){
-                if(arrayList.get(i) <5){
+        for (int i = 0; i < arrayList.size(); i++) {
+            if ((i + 1) % 2 == 0) {
+                if (arrayList.get(i) < 5) {
                     secondSum = secondSum + arrayList.get(i);
                 }
-
             }
         }
 
+        System.out.println("firstSum: " + firstSum);
+        System.out.println("secondSum: " + secondSum);
+        compare(firstSum, secondSum);
 
-        System.out.println(firstSum);
-        System.out.println(secondSum);
-        compare(firstSum,secondSum);
+    }
 
-        }
-        static void compare( int sum1, int sum2){
-	    if (sum1 > sum2){
-            System.out.println(sum1 + "больше");
-        }else if (sum1 < sum2){
-            System.out.println(sum2 + "больше");
+    static void compare(int sum1, int sum2) {
+        if (sum1 > sum2) {
+            System.out.println(sum1 + " больше");
+        } else if (sum1 < sum2) {
+            System.out.println(sum1 + " меньше");
         } else System.out.println("равны");
-
-        }
-
-	}
+    }
+}
 
