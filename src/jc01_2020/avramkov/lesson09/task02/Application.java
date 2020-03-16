@@ -8,6 +8,8 @@ package jc01_2020.avramkov.lesson09.task02;
  */
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Application {
@@ -15,13 +17,13 @@ public class Application {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<String> newList = new ArrayList<>();
+        List<String> linkedList = new LinkedList<>();
 
         for (int i = 0; i < 5; i++) {
             String str = scanner.nextLine();
-            newList.add(0, str);
+            linkedList.add(0, str);
         }
-        System.out.println(newList.get(0));
+        System.out.println(linkedList.get(0));
     }
 
 }

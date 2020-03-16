@@ -8,10 +8,7 @@ package jc01_2020.avramkov.lesson10.task03;
  *
  */
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.Scanner;
+import java.util.*;
 
 public class Application {
 
@@ -19,11 +16,11 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите строку:");
         String strOld = scanner.nextLine();
+        int count = 0;
 
-        String[] arrayOld = strOld.toLowerCase().split("");                       // #1
-        LinkedHashSet<String> hashSet = new LinkedHashSet<>(Arrays.asList(arrayOld));   // #2
-        int count = 0;                                                                  // #3
-        Iterator<String> iterator = hashSet.iterator();
+        String[] arrayOld = strOld.toLowerCase().replace(" ", "").split("");                       // #1
+        Set<String> set = new TreeSet<>(Arrays.asList(arrayOld));   // #2
+        Iterator<String> iterator = set.iterator();                                 // #3
         while (iterator.hasNext() && count < 5) {
             System.out.print(iterator.next());
             count++;
