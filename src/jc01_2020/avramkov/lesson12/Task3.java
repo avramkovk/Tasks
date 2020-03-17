@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class Task3 {
 	public static void main(String[] args) {
 
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new LinkedHashMap<>();
 		map.put("Петров", "Петр");
 		map.put("Иванов", "Иван");
 		map.put("Сидоров", "Сидор");
@@ -38,6 +38,7 @@ public class Task3 {
 		map.put("Романов", "Роман");
 		map.put("Сергеев", "Сергей");
 
+
 		map.replaceAll((key,value) -> value+key);
 
 		Map<String, String> collect = map.entrySet()
@@ -52,6 +53,7 @@ public class Task3 {
 
 		String longName = Collections.max(list, Comparator.comparingInt(String::length));
 		System.out.println("longName = " + longName);
+
 
 	}
 }

@@ -13,53 +13,74 @@ package jc01_2020.avramkov.lesson12;
  *
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class Task4 {
-    private static Random r = new Random();
-
-    private static String randomColor(){
-        return Car.Color.values()[r.nextInt(5)].toString();
-    }
 
     public static void main(String[] args) {
-        Map<Car, String> autoWithEmptyValue = new HashMap<>();
-
-        for (int i = 0; i < 5; i++) {
-            autoWithEmptyValue.put(new Car(randomColor()), "empty");
+        Random random = new Random();
+        List<Car> garage = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            garage.add(new Car(Color.values()[random.nextInt(5)]));
         }
+        String string = garage.stream()
+                .peek(car -> car.setColored(car.getColor().getColor()))
+                .limit(10)
+                .filter(car -> car.getColor() == Color.values()[Color.values().length - 1])
+                .peek(car -> System.out.println(car.getColor()))
+                .map(Car::getColored)
+                .collect(Collectors.joining(" "));
+    }
 
-//заполнение Карты с автобилями. Значение ключа берется старое, а в значение записывается рандомный цвет
-        Map<Car, String> autoFullMap = autoWithEmptyValue.entrySet()
-                .stream()
-                .collect(Collectors.toMap(k -> k.getKey(), v -> randomColor()));
-        System.out.println(autoFullMap);
 
-        String lastCarColor = Objects.requireNonNull(autoFullMap
-                .entrySet()
-                .stream()
-                .reduce((first, second) -> second) //находим последний элемент Карты autoFullMap
-                .orElse(null))//если нет последнего элемента, то вернуть null
-                .getValue(); //получаем значение последнего элемента Карты, то есть цвет авто
-        System.out.println(lastCarColor);
+}
 
-        boolean lastColor = autoFullMap
-                .entrySet()
-                .stream()
-                .limit(3) //оставлям первые 3 авто
-                .filter(x -> x.getValue().equals(lastCarColor)) //выбираем авто, у которых совпадает цвет с последним авто
-                .anyMatch(x -> true);//если есть хоть 1 авто, то выводим true
-        System.out.println(lastColor);
+enum Color {
+    RED("Red"),
+    WHITE("White"),
+    BLUE("Blue"),
+    GREEN("Green"),
+    GREY("Grey");
+
+    private String color;
+
+    Color(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
     }
 }
 
 class Car {
-    enum Color {BLACK, WHITE, GREEN, PINK, YELLOW}
 
-    String color;
+    private String colored;
+    private Color color;
 
-    public Car(String color) {
+    public Car(Color color) {
         this.color = color;
     }
+
+    public String getColored() {
+        return colored;
+    }
+
+    public void setColored(String colored) {
+        this.colored = colored;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+
+
 }
