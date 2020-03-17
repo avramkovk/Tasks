@@ -26,13 +26,19 @@ public class Task4 {
         for (int i = 0; i < 50; i++) {
             garage.add(new Car(Color.values()[random.nextInt(5)]));
         }
-        String string = garage.stream()
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(garage.get(i).getColor());
+        }
+        System.out.println("---");
+        boolean trueCar = garage.stream()
                 .peek(car -> car.setColored(car.getColor().getColor()))
                 .limit(10)
                 .filter(car -> car.getColor() == Color.values()[Color.values().length - 1])
-                .peek(car -> System.out.println(car.getColor()))
+                .peek(car -> System.out.println("Последнее значение цвета в Enum: " + car.getColor()))
                 .map(Car::getColored)
-                .collect(Collectors.joining(" "));
+                .anyMatch(x -> true);
+        System.out.println("Автомобиль с таким цветом существует? - " + trueCar);
     }
 
 
