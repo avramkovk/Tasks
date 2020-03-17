@@ -22,17 +22,27 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        birthDayMap.put("Rob", LocalDate.of(2019, 1, 12));
-        birthDayMap.put("Bob", LocalDate.of(1980, 3, 15));
-        birthDayMap.put("Anna", LocalDate.of(2010, 3, 9));
-        birthDayMap.put("Elza", LocalDate.of(2001, 6, 30));
+        //birthDayMap.put("Rob", LocalDate.of(2019, 1, 2));
+        //birthDayMap.put("Harry", LocalDate.of(1990, 1, 22));
+       // birthDayMap.put("Bob", LocalDate.of(1980, 2, 1));
+        birthDayMap.put("Alister ", LocalDate.of(2014, 2, 21));
+        birthDayMap.put("Anna", LocalDate.of(2010, 3, 3));
+        birthDayMap.put("Crispin ", LocalDate.of(1961, 3, 23));
+        birthDayMap.put("Elza", LocalDate.of(2001, 4, 4));
+        birthDayMap.put("Piers ", LocalDate.of(1939, 4, 24));
         birthDayMap.put("Mary", LocalDate.of(2000, 12, 15));
 
+        //добавление дня рождения в Карту
         addBirthDayToMap("Donald", LocalDate.of(1999, 12, 31));
-        System.out.println(birthDayMap);
+
         System.out.println("--------------------------------------------------------------------");
-        allBirthDay(birthDayMap, LocalDate.of(2020, 3, 10));
+
+        //вывод ближайших дней рождений к определенной дате
+        allBirthDay(birthDayMap, LocalDate.of(2020, 1, 1));
+
         System.out.println("--------------------------------------------------------------------");
+
+        //вывод оставшихся дней до дня рождение определенного человека
         System.out.println("Сегодня " + LocalDate.now());
         birthDayName("Anna");
         birthDayName("Rob");
@@ -51,15 +61,17 @@ public class Task3 {
             int daysDifference = entry.getValue().getDayOfYear() - otherDate.getDayOfYear();
             if (daysDifference > 0 && daysDifference < 30) {
                 System.out.println(entry.getKey() + ", осталось " + daysDifference + " дн.");
-            } else if ((daysDifference < 0 && daysDifference > -30)) {
-                System.out.println("День рождения " + entry.getKey() + " был " + Math.abs(daysDifference) + " дн. назад");
             }
+            /*else if ((daysDifference < 0 && daysDifference > -30)) {
+                System.out.println("День рождения " + entry.getKey() + " был " + Math.abs(daysDifference) + " дн. назад");
+            }*/
         }
     }
 
     //вывод оставшихся дней до дня рождения определенного человека относительно текущей даты
     public static void birthDayName(String name) {
         for (Map.Entry<String, LocalDate> entry : birthDayMap.entrySet()) {
+
             int daysDifference = entry.getValue().getDayOfYear() - LocalDate.now().getDayOfYear();
             String nameCurrent = entry.getKey();
             if (name.equals(nameCurrent) && daysDifference > 0) {
