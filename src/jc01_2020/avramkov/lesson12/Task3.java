@@ -10,36 +10,53 @@ package jc01_2020.avramkov.lesson12;
  *
  */
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Task3 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Map<String, String> map = new LinkedHashMap<>();
-		map.put("Петров", "Петр");
-		map.put("Иванов", "Иван");
-		map.put("Сидоров", "Сидор");
-		map.put("Павлов", "Павел");
-		map.put("Валерьянов", "Валерий");
-		map.put("Леонтьев", "Леонтий");
-		map.put("Савельев", "Савелий");
-		map.put("Игнатьев", "Игнатий");
-		map.put("Борисов", "Борис");
-		map.put("Дмитриев", "Дмитрий");
-		map.put("Геннадьев", "Геннадий");
-		map.put("Филлиппов", "Филипп");
-		map.put("Артемьев", "Артемий");
-		map.put("Владимиров", "Владимир");
-		map.put("Юрьев", "Юрий");
-		map.put("Платонов", "Платон");
-		map.put("Евгеньев", "Евгений");
-		map.put("Григорьев", "Григорий");
-		map.put("Романов", "Роман");
-		map.put("Сергеев", "Сергей");
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("Юрьев", "Юрий");
+        map.put("Петров", "Петр");
+        map.put("Иванов", "Иван");
+        map.put("Павлов", "Павел");
+        map.put("Сидоров", "Сидор");
+        map.put("Борисов", "Борис");
+        map.put("Романов", "Роман");
+        map.put("Сергеев", "Сергей");
+        map.put("Платонов", "Платон");
+        map.put("Леонтьев", "Леонтий");
+        map.put("Савельев", "Савелий");
+        map.put("Игнатьев", "Игнатий");
+        map.put("Дмитриев", "Дмитрий");
+        map.put("Филлиппов", "Филипп");
+        map.put("Артемьев", "Артемий");
+        map.put("Евгеньева", "Евгения");
+        map.put("Григорьев", "Григорий");
+        map.put("Геннадьев", "Геннадий");
+        map.put("Валерьянов", "Валерий");
+        map.put("Владимиров", "Владимир");
 
+/*        for (Map.Entry<String, String> entry : map.entrySet()) {
+        	//длина строк
+            System.out.println(entry.getKey() + entry.getValue() + "=" + (entry.getKey().length() + entry.getValue().length()));
+        }*/
 
-		map.replaceAll((key,value) -> value+key);
+        String collect = map.entrySet()
+                .stream()
+                .peek(x -> x.setValue(x.getKey() + x.getValue()))
+                .map(Map.Entry::getValue)
+                .filter(s -> s.length() <= 16)
+                .max(Comparator.comparingInt(String::length))
+                .orElse(null);
+
+        System.out.println(collect);
+    }
+}
+
+/*map.replaceAll((key,value) -> value+key);
 
 		Map<String, String> collect = map.entrySet()
 				.stream()
@@ -52,8 +69,4 @@ public class Task3 {
 		}
 
 		String longName = Collections.max(list, Comparator.comparingInt(String::length));
-		System.out.println("longName = " + longName);
-
-
-	}
-}
+		System.out.println("longName = " + longName);*/
