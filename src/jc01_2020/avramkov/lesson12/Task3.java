@@ -44,15 +44,14 @@ public class Task3 {
             System.out.println(entry.getKey() + entry.getValue() + "=" + (entry.getKey().length() + entry.getValue().length()));
         }*/
 
-        String collect = map.entrySet()
+        map.entrySet()
                 .stream()
                 .peek(x -> x.setValue(x.getKey() + x.getValue()))
                 .map(Map.Entry::getValue)
                 .filter(s -> s.length() <= 16)
                 .max(Comparator.comparingInt(String::length))
-                .orElse(null);
+                .ifPresent(System.out::println);
 
-        System.out.println(collect);
     }
 }
 

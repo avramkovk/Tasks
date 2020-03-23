@@ -28,11 +28,8 @@ public class Application {
             System.out.println("NPE");
         } catch (FileNotFoundException e) {
             System.out.println("File is absent");
-        } catch (ArithmeticException e) {
-            System.out.println("ArithmeticException");
-        } catch (NumberFormatException e) {
-            System.out.println("NumberFormatException");
-
+        } catch (ArithmeticException |NumberFormatException e) {
+            System.out.println("ArithmeticException or NumberFormatException");
         } finally {
             System.out.println("Program finished successfully");
         }

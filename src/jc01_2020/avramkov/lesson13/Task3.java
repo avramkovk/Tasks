@@ -13,7 +13,6 @@ package jc01_2020.avramkov.lesson13;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Task3 {
@@ -22,9 +21,9 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        //birthDayMap.put("Rob", LocalDate.of(2019, 1, 2));
-        //birthDayMap.put("Harry", LocalDate.of(1990, 1, 22));
-       // birthDayMap.put("Bob", LocalDate.of(1980, 2, 1));
+        birthDayMap.put("Rob", LocalDate.of(2019, 1, 2));
+        birthDayMap.put("Harry", LocalDate.of(1990, 1, 22));
+        birthDayMap.put("Bob", LocalDate.of(1980, 2, 1));
         birthDayMap.put("Alister ", LocalDate.of(2014, 2, 21));
         birthDayMap.put("Anna", LocalDate.of(2010, 3, 3));
         birthDayMap.put("Crispin ", LocalDate.of(1961, 3, 23));
@@ -59,29 +58,20 @@ public class Task3 {
         System.out.println("Ближайшие дни рождения к дате " + otherDate);
         for (Map.Entry<String, LocalDate> entry : map.entrySet()) {
             int daysDifference = entry.getValue().getDayOfYear() - otherDate.getDayOfYear();
-            if (daysDifference > 0 && daysDifference < 30) {
-                System.out.println(entry.getKey() + ", осталось " + daysDifference + " дн.");
-            }
-            /*else if ((daysDifference < 0 && daysDifference > -30)) {
-                System.out.println("День рождения " + entry.getKey() + " был " + Math.abs(daysDifference) + " дн. назад");
-            }*/
+            System.out.println(entry.getKey() + ", осталось " + daysDifference + " дн.");
         }
     }
 
     //вывод оставшихся дней до дня рождения определенного человека относительно текущей даты
     public static void birthDayName(String name) {
         for (Map.Entry<String, LocalDate> entry : birthDayMap.entrySet()) {
-
             int daysDifference = entry.getValue().getDayOfYear() - LocalDate.now().getDayOfYear();
             String nameCurrent = entry.getKey();
             if (name.equals(nameCurrent) && daysDifference > 0) {
                 System.out.println("До дня рождения " + name + " осталось " + daysDifference + " дн.");
-            } else if (name.equals(nameCurrent) && daysDifference < 0) {
-                System.out.println("День рождения " + name + " был " + Math.abs(daysDifference) + " дн. назад");
             }
         }
     }
-
 }
 
 //рабочий вариант 1
