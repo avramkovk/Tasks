@@ -46,6 +46,7 @@ public class Task3 {
 
         map.entrySet()
                 .stream()
+                .peek(x-> System.out.println(x.getValue()))
                 .peek(x -> x.setValue(x.getKey() + x.getValue()))
                 .map(Map.Entry::getValue)
                 .filter(s -> s.length() <= 16)
