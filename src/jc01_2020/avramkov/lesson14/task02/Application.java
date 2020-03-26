@@ -7,13 +7,12 @@ package jc01_2020.avramkov.lesson14.task02;
  */
 
 import java.io.*;
-import java.util.Properties;
 import java.util.Scanner;
 
 public class Application {
 
 	public static void main(String[] args) {
-		System.out.println("Чтение из файла посредством FileReader:");
+		System.out.println("Чтение файла при помощи FileReader:");
 		try {
 			Reader reader = new FileReader("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
 			Scanner scanner = new Scanner(reader);
@@ -27,7 +26,7 @@ public class Application {
 		}
 
 		System.out.println("--------------------------------------------");
-		System.out.println("Чтение из файла посредством FileInputStream:");
+		System.out.println("Чтение файла при помощи FileInputStream:");
 
 		try {
 			InputStream fis = new FileInputStream("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
@@ -35,10 +34,17 @@ public class Application {
 			while (scanner.hasNextLine()) {
 				System.out.println(scanner.nextLine());
 			}
+
+/*			BufferedInputStream buffer = new BufferedInputStream(fis);
+			while(buffer.available()>0){
+				System.out.print((char)buffer.read()); //считываются закорючки
+			}
+			buffer.close();*/
+
+			scanner.close();
 			fis.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
 }
