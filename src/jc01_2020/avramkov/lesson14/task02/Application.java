@@ -7,44 +7,43 @@ package jc01_2020.avramkov.lesson14.task02;
  */
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Application {
 
-	public static void main(String[] args) {
-		System.out.println("Чтение файла при помощи FileReader:");
-		try {
-			Reader reader = new FileReader("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
-			Scanner scanner = new Scanner(reader);
-			while (scanner.hasNextLine()) {
-				System.out.println(scanner.nextLine());
-			}
-			reader.close();
-			scanner.close();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
+    public static void main(String[] args) {
+        try {
+            Reader fr = new FileReader("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
+            InputStream fis = new FileInputStream("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
 
-		System.out.println("--------------------------------------------");
-		System.out.println("Чтение файла при помощи FileInputStream:");
+            List<String> listFis = new ArrayList<>();
+            List<String> listReader = new ArrayList<>();
 
-		try {
-			InputStream fis = new FileInputStream("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
-			Scanner scanner = new Scanner(fis);
-			while (scanner.hasNextLine()) {
-				System.out.println(scanner.nextLine());
-			}
+            Scanner scannerFis = new Scanner(fis);
+            Scanner scannerReader = new Scanner(fr);
 
-/*			BufferedInputStream buffer = new BufferedInputStream(fis);
-			while(buffer.available()>0){
-				System.out.print((char)buffer.read()); //считываются закорючки
-			}
-			buffer.close();*/
+            while (scannerFis.hasNextLine()) {
+                listFis.add(scannerFis.nextLine());
+            }
 
-			scanner.close();
-			fis.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+            while (scannerReader.hasNextLine()) {
+                listReader.add(scannerReader.nextLine());
+            }
+
+            if (listFis.containsAll(listReader)) {
+                System.out.println("совпадают");
+            } else {
+                System.out.println("не совпадают");
+            }
+
+            fr.close();
+            fis.close();
+            scannerFis.close();
+            scannerReader.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
