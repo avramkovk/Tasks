@@ -3,9 +3,9 @@ package jc01_2020.avramkov.lesson14.task03;
 import java.io.Serializable;
 
 public class Book implements Serializable {
-    String name;
-    transient String author;
-    int isbn;
+    private String name;
+    transient private String author;
+    private int isbn;
 
     public Book(String name, String author, int isbn) {
         this.name = name;

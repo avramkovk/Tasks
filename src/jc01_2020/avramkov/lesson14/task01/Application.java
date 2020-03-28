@@ -28,5 +28,4 @@ public class Application {
             throw new RuntimeException();
         }
     }
-
 }
