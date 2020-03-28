@@ -6,44 +6,31 @@ package jc01_2020.avramkov.lesson14.task02;
  *
  */
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Application {
 
     public static void main(String[] args) {
         try {
-            Reader fr = new FileReader("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
-            InputStream fis = new FileInputStream("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
-
-            List<String> listFis = new ArrayList<>();
-            List<String> listReader = new ArrayList<>();
-
-            Scanner scannerFis = new Scanner(fis);
-            Scanner scannerReader = new Scanner(fr);
-
-            while (scannerFis.hasNextLine()) {
-                listFis.add(scannerFis.nextLine());
+            FileReader fr = new FileReader("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt");
+            List<Character> listFr = new ArrayList<>();
+            while (fr.read() != -1) {
+                listFr.add((char) fr.read());
             }
 
-            while (scannerReader.hasNextLine()) {
-                listReader.add(scannerReader.nextLine());
+            InputStreamReader ISR = new InputStreamReader(new FileInputStream("src\\jc01_2020\\avramkov\\lesson14\\resource\\lesson14-01.txt"));
+            List<Character> listISR = new ArrayList<>();
+            while (ISR.read() != -1) {
+                listISR.add((char) ISR.read());
             }
-
-            if (listFis.containsAll(listReader)) {
-                System.out.println("совпадают");
-            } else {
-                System.out.println("не совпадают");
-            }
-
-            fr.close();
-            fis.close();
-            scannerFis.close();
-            scannerReader.close();
+            System.out.println(listFr.containsAll(listISR));
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }
