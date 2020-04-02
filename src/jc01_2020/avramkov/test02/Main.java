@@ -24,6 +24,7 @@ import jc01_2020.avramkov.lesson14.examples.Person;
 import jc01_2020.test02.Employee;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class Main {
@@ -33,20 +34,15 @@ public class Main {
     public static final String PATH_TO = "src/jc01_2020/avramkov/test02/resource/result.txt";
 
     public static void main(String[] args) {
-        Employee employee = getEmployee();
 
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/jc01_2020/test02/secret.dat"))) {
-            Employee employee1 = (Employee) ois.readObject();
+        Employee employee = null;
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(PATH_FROM))){
+            employee = Helper.getEmployee();
+            //employee = (Employee) ois.readObject();
             System.out.println(employee);
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
-
-
-
-
-
-
 
     }
 

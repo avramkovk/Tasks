@@ -9,16 +9,15 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Доктор implements Employee, Serializable {
-    @Override
-    public String toString() {
-        return "Доктор{" +
+    public void print(){
+        System.out.println("Водитель{" +
                 "name='" + name + '\'' +
                 ", department=" + department +
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", workPeriod=" + workPeriod +
                 ", rewards=" + rewards +
-                '}';
+                '}');
     }
 
     private String name;

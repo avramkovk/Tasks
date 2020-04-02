@@ -1,3 +1,4 @@
+/*
 package jc01_2020.classwork.junit;
 
 import org.hamcrest.CoreMatchers;
@@ -47,3 +48,4 @@ public class MathTest {
     }
 
 }
+*/

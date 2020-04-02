@@ -9,17 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Водитель implements Employee, Serializable {
-    @Override
-    public String toString() {
-        return "Водитель{" +
-                "name='" + name + '\'' +
-                ", department=" + department +
-                ", startDate=" + startDate +
-                ", endDate=" + endDate +
-                ", workPeriod=" + workPeriod +
-                ", rewards=" + rewards +
-                '}';
-    }
+
 
     private String name;
     private Department department;
@@ -76,4 +66,14 @@ public class Водитель implements Employee, Serializable {
         this.rewards = rewards;
     }
 
+    public void print(){
+        System.out.println("Водитель{" +
+                "name='" + name + '\'' +
+                ", department=" + department +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", workPeriod=" + workPeriod +
+                ", rewards=" + rewards +
+                '}');
+    }
 }

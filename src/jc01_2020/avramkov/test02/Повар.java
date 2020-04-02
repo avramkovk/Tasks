@@ -21,6 +21,17 @@ public class Повар implements Employee, Serializable {
                 '}';
     }
 
+    public void print(){
+        System.out.println("Водитель{" +
+                "name='" + name + '\'' +
+                ", department=" + department +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", workPeriod=" + workPeriod +
+                ", rewards=" + rewards +
+                '}');
+    }
+
     private String name;
     private Department department;
     private LocalDate startDate;

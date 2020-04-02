@@ -21,4 +21,6 @@ public interface Employee {
     List<Reward> getRewards();
     void setRewards(List<Reward> rewards);
 
+     static void print(Employee employee) {
+    }
 }

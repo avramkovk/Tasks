@@ -20,13 +20,13 @@ public enum  Department {
         this.value = value;
     }
 
-    public static Department getDepartment(Department department) {
+    public static Department getDepartment(String department) {
         /*тут можно что-нибудь написать*/
-
-        if (department == A1) return Department.valueOf(A1.value);
-        if (department == A2) return Department.valueOf(A2.value);
-        if (department == A3) return Department.valueOf(A3.value);
+        for (Department dep: values()){
+            if(dep.getValue().equals(department)){
+                return dep;
+            }
+        }
         return null;
     }
-
 }
